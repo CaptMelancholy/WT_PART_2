@@ -2,6 +2,7 @@ package LABA_1.task12_16;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 
 public class Main {
@@ -15,7 +16,7 @@ public class Main {
         arrayList.add(book2);
         arrayList.add(book3);
         arrayList.add(book4);
-        Collections.sort(arrayList);
+        Collections.sort(arrayList, new AuthorTitlePriceComparator());
         for(Book bookSort : arrayList)
         {
             System.out.println(bookSort.toString());

@@ -8,9 +8,12 @@ public class Task7 {
                 double tmp = result[i];
                 result[i] = result[i + 1];
                 result[i + 1] = tmp;
-                if(i != 0) i--;
-            } else if(i != result.length) i++;
-
+                if(i != 0) {
+                    i--;
+                }
+            } else if(i != result.length) {
+                i++;
+            }
         }
         return result;
     }
