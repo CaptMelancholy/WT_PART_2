@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class task8Test {
+class Task8Test {
 
     @Test
     void solve() {
@@ -18,12 +18,7 @@ class task8Test {
         arr.add(1);
         arr.add(2);
         arr.add(4);
-        ArrayList<Integer> arrayList = new ArrayList<>();
-        arrayList = task8.solve(a, b);
-        for(int i = 0; i < arrayList.size(); i++)
-        {
-            System.out.print(arrayList.get(i));
-        }
-        System.out.println();
+        ArrayList<Integer> arrayList = Task8.solve(a, b);
+        assertEquals(arr, arrayList);
     }
 }

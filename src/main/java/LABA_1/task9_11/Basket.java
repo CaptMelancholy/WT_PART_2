@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Basket {
 
-    public ArrayList<Ball> balls;
+    public static ArrayList<Ball> balls;
     public Basket(ArrayList<Ball> balls){
         this.balls = balls;
     }
@@ -13,11 +13,21 @@ public class Basket {
         balls.add(ball);
     }
 
-    public int countWeight() {
-        int weight = 0;
+    public double countWeight() {
+        double weight = 0;
         for(Ball ball : balls) {
             weight += ball.weight;
         }
         return weight;
+    }
+
+    public static int countColorBalls(String searchColor) {
+        int amount = 0;
+        for(Ball ball : balls) {
+            if(ball.color.trim().toUpperCase().equals(searchColor.trim().toUpperCase())) {
+                amount++;
+            }
+        }
+        return amount;
     }
 }
