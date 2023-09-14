@@ -10,7 +10,7 @@ public class AuthorTitlePriceComparator implements Comparator<Book> {
             result = o1.getTitle().compareTo(o2.getTitle());
             if(result == 0)
             {
-                result = (o1.getPrice() < o2.getPrice()) ? -1 : ((o1.getPrice() == o2.getPrice()) ? 0 : 1);
+                result = Integer.compare(o1.getPrice(), o2.getPrice());
             }
         }
         return result;

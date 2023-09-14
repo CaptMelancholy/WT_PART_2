@@ -30,8 +30,7 @@ public class ProgrammerBook extends Book{
     @Override
     public boolean equals(Object o) {
         ProgrammerBook programmerBook = (ProgrammerBook) o;
-        boolean result = super.equals(o) && programmerBook.getLanguage().equals(getLanguage()) && (programmerBook.getLevel() == getLevel());
-        return result;
+        return super.equals(o) && programmerBook.getLanguage().equals(getLanguage()) && (programmerBook.getLevel() == getLevel());
     }
 
     @Override

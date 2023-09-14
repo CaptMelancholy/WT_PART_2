@@ -2,19 +2,18 @@ package LABA_1.task7;
 
 public class Task7 {
     public static double[] solveShellSort(double[] array) {
-        double[] result = array;
-        for(int i = 0; i < result.length - 1; ) {
-            if(result[i] > result[i + 1]) {
-                double tmp = result[i];
-                result[i] = result[i + 1];
-                result[i + 1] = tmp;
+        for(int i = 0; i < array.length - 1; ) {
+            if(array[i] > array[i + 1]) {
+                double tmp = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = tmp;
                 if(i != 0) {
                     i--;
                 }
-            } else if(i != result.length) {
+            } else {
                 i++;
             }
         }
-        return result;
+        return array;
     }
 }

@@ -6,7 +6,7 @@ public class Basket {
 
     public static ArrayList<Ball> balls;
     public Basket(ArrayList<Ball> balls){
-        this.balls = balls;
+        Basket.balls = balls;
     }
 
     public void addBall(Ball ball) {
@@ -24,7 +24,7 @@ public class Basket {
     public static int countColorBalls(String searchColor) {
         int amount = 0;
         for(Ball ball : balls) {
-            if(ball.color.trim().toUpperCase().equals(searchColor.trim().toUpperCase())) {
+            if(ball.color.trim().equalsIgnoreCase(searchColor.trim())) {
                 amount++;
             }
         }

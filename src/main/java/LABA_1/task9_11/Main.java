@@ -9,6 +9,6 @@ public class Main {
         basket.addBall(new Ball("Red", 1.2));
         basket.addBall(new Ball("Grey", 4.4));
         System.out.println(basket.countWeight());
-        System.out.println(basket.countColorBalls("Grey"));
+        System.out.println(Basket.countColorBalls("Grey"));
     }
 }

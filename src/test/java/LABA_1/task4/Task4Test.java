@@ -17,6 +17,6 @@ class Task4Test {
         arrayList.add(4);
         BigInteger[] arr = {BigInteger.valueOf(2), BigInteger.valueOf(4), BigInteger.valueOf(5), BigInteger.valueOf(8), BigInteger.valueOf(13)};
         ArrayList<Integer> arrayListRes = Task4.solve(arr);
-        assertTrue(arrayList.equals(arrayListRes));
+        assertEquals(arrayList, arrayListRes);
     }
 }

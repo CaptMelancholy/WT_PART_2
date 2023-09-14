@@ -15,7 +15,7 @@ class Task3Test {
         arrayList.add(Math.tan(2));
         arrayList.add(Math.tan(4));
         arrayList.add(Math.tan(5));
-        assertTrue(arrayList.equals(result));
+        assertEquals(arrayList, result);
 
     }
 }

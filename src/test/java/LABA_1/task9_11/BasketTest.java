@@ -30,6 +30,6 @@ class BasketTest {
 
     @Test
     void countColorBalls() {
-        assertEquals(basket.countColorBalls("Blue"), 3);
+        assertEquals(Basket.countColorBalls("Blue"), 3);
     }
 }

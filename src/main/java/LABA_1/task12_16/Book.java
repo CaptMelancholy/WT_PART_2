@@ -68,7 +68,7 @@ public class Book implements Cloneable, Comparable{
         {
             return false;
         }
-        if(book.getEdition() != getEdition()) {
+        if(getEdition() != getEdition()) {
             return false;
         }
         if(book.getPrice() != getPrice())
@@ -93,7 +93,7 @@ public class Book implements Cloneable, Comparable{
 
     @Override
     public Book clone() {
-        return new Book(this.getTitle(), this.getAuthor(), this.getPrice(), this.getEdition(), this.getIsbn());
+        return new Book(this.getTitle(), this.getAuthor(), this.getPrice(), getEdition(), this.getIsbn());
     }
 
 

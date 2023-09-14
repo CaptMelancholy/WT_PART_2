@@ -10,10 +10,7 @@ public class Task2 {
         if(y > 0) {
             return (x >= -4) && (x <= 4);
         } else if (y < 0) {
-            return (x >= -6) && (x <= 6);
-        } else if(y == 0){
             return true;
-        }
-        return false;
+        } else return true;
     }
 }
