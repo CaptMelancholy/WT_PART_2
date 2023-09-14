@@ -4,7 +4,7 @@ import java.sql.Array;
 import java.util.ArrayList;
 
 public class task3 {
-    public ArrayList<Double> solve(int a, int b, int h) {
+    public static ArrayList<Double> solve(int a, int b, int h) {
         ArrayList<Double> res = new ArrayList<>();
         if((h < 0 && (a < b)) || (h > 0 && a > b) || (h == 0) || (a == b))
         {

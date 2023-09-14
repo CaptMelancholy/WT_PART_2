@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 
 public class task4 {
-    public ArrayList<Integer> solve(BigInteger[] arr)
+    public static ArrayList<Integer> solve(BigInteger[] arr)
     {
         ArrayList<Integer> res = new ArrayList<>();
         for(int i = 0; i < arr.length; i++)

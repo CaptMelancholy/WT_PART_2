@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class task8 {
 
-    public ArrayList<Integer> solve(double[] arr1, double[] arr2)
+    public static ArrayList<Integer> solve(double[] arr1, double[] arr2)
     {
         int i = 0;
         int j = 0;
@@ -14,10 +14,10 @@ public class task8 {
             if(arr1[i] <= arr2[j])
             {
                 res.add(i);
+                j++;
             } else {
                 i++;
             }
-            j++;
         }
         int n = arr1.length;
         for(int k = j; j < arr2.length; j++)
